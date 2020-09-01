@@ -2,149 +2,165 @@ Full name:  Pole
 Short name: pole
 Author:     https://github.com/Alvarocz/
 Maintainer: Gianmaria Bajo <mg1979.git@gmail.com>
-Neovim:	    yes
+Neovim:     yes
 
-# Original name: northpole
+; Original name: northpole
 
 Background: dark
 
-# Basic 16 Colors {{{1
+; Basic 16 Colors {{{1
 
-Color:	background	#25262e		235	Black
-Color:	darkred		#800000		1	DarkRed
-Color:	darkgreen	#008000		2	DarkGreen
-Color:	darkyellow	#ca9d81		180	DarkYellow
-Color:	darkblue	#58678c		60	DarkBlue
-Color:	purple		#ad85cc		140	DarkMagenta
-Color:	darkcyan	#008080		6	DarkCyan
-Color:	lightgray	#caccd7		252	LightGray
-Color:	gray		#626870		242	DarkGray
-Color:	red		#ee6a6a		203	Red
-Color:	green		#54ca91		42	Green
-Color:	yellow		#f0c674		222	Yellow
-Color:	blue		#8599cc		103	Blue
-Color:	magenta		#ff00ff		13	Magenta
-Color:	cyan		#54c5ca		80	Cyan
-Color:	white		#d5d6d7		188	White
+Color:  background      #25262e         235     Black
+Color:  darkred         #800000         1       DarkRed
+Color:  darkgreen       #008000         2       DarkGreen
+Color:  darkyellow      #ca9d81         180     DarkYellow
+Color:  darkblue        #58678c         60      DarkBlue
+Color:  purple          #ad85cc         140     DarkMagenta
+Color:  darkcyan        #008080         6       DarkCyan
+Color:  lightgray       #caccd7         252     LightGray
+Color:  gray            #626870         242     DarkGray
+Color:  red             #ee6a6a         203     Red
+Color:  green           #54ca91         42      Green
+Color:  yellow          #f0c674         222     Yellow
+Color:  blue            #8599cc         103     Blue
+Color:  magenta         #ff00ff         13      Magenta
+Color:  cyan            #54c5ca         80      Cyan
+Color:  white           #d5d6d7         188     White
 
-# More Colors {{{1
+; More Colors {{{1
 
-Color:	foreground	#a2a8ad		248	LightGray
-Color:	gray2		#808080		8	DarkGray
-Color:	darkgray	#23242a		235	Black
-Color:	fold		#282d33		236	Black
-Color:	grayblue	#384048		238	Black
-Color:	search		#3b4d61		238	Black
-Color:	orange		#ff9800		208	Yellow
-Color:	aqua		#659ea2		73	DarkCyan
+Color:  foreground      #a2a8ad         248     LightGray
+Color:  gray2           #808080         8       DarkGray
+Color:  darkgray        #23242a         235     Black
+Color:  fold            #282d33         236     Black
+Color:  grayblue        #384048         238     Black
+Color:  search          #3b4d61         238     Black
+Color:  orange          #ff9800         208     Yellow
+Color:  aqua            #659ea2         73      DarkCyan
 
-Term Colors: background		darkred		darkgreen	darkyellow
-Term Colors: darkblue		purple		darkcyan	lightgray
-Term Colors: gray		red		green		yellow
-Term Colors: blue		magenta		cyan		white
+Term Colors: background         darkred         darkgreen       darkyellow
+Term Colors: darkblue           purple          darkcyan        lightgray
+Term Colors: gray               red             green           yellow
+Term Colors: blue               magenta         cyan            white
 
 
-Normal		foreground	background
+Normal          foreground      background
 
 verbatim
-	let g:Vsd = get(g:, 'Vsd', {})
-	silent! call vsd#init('pole')
+        let g:Vsd = get(g:, 'Vsd', {})
+        silent! call vsd#init('pole')
 endverbatim
 
 
-# Directory
-# EnumerationName
-# EnumerationValue
-# Ignore
-# SignColumn
-# Underlined
-# Union
-# WarningMsg
-# WildMenu
+; Directory
+; EnumerationName
+; EnumerationValue
+; Ignore
+; SignColumn
+; Underlined
+; Union
+; WarningMsg
+; WildMenu
 
-Comment		gray		none		italic
+Comment         gray            none            italic
 
-Constant	orange		none
-String		red		none
-Character	orange		none
-Number		green		none		bold
-Boolean		white		none		bold
-Float		green		none		bold
+Constant        orange          none            italic
+String          red             none
+Character       red             none
+Number          red             none
+Boolean         red             none
+Float           red             none
 
-Identifier	aqua		none
-Function	blue		none
+ConstexprVariable ->            Constant
+EnumMember ->                   Constant
+NonTypeTemplateParameter ->     Constant
 
-Statement	white		none
-Conditional	white		none
-Repeat		blue		none
-Label		darkblue	none
-Operator	darkblue	none
-Keyword		white		none
-Exception	blue		none
+Identifier      cyan            none
+LocalVariable   lightgray       none
+Variable        lightgray       none            italic
+Argument        gray            none
+Field           aqua            none
+StaticField     aqua            none            italic
 
-PreProc		darkcyan	none		gui=bold
-Define		->		PreProc
-Macro		->		PreProc
-PreCondit	->		PreProc
+Function        blue            none            italic
+Method          blue            none
+StaticMethod    blue            none            italic
 
-Type		purple		none
-StorageClass	darkblue	none
-Structure	blue		none
-Typedef		darkblue	none
+Namespace       blue            none
 
-Special		darkyellow	none
-SpecialChar	->		Special
-Tag		->		Special
-SpecialComment	->		Special
-Delimiter	gray		none
-Debug		yellow		none
+Statement       white           none
+Conditional     white           none
+Repeat          white           none
+Label           darkblue        none
+Operator        darkblue        none
+Keyword         white           none            bold
+Exception       white           none
 
-Pmenu		white		grayblue
-PmenuSbar	none		grayblue
-PmenuSel	background	green
-PmenuThumb	none		green
+PreProc         darkcyan        none            gui=bold
+Define          ->              PreProc
+Macro           ->              PreProc
+PreCondit       ->              PreProc
 
-ColorColumn	none		darkgray
-CursorLine	none		darkgray
-CursorLineNr	cyan		darkgray
-CursorColumn	none		darkgray
-Cursor		none		darkblue
-EndOfBuffer	grayblue	none
-Error		background	red
-ErrorMsg	red		none		bold
-Ignore		grayblue	none
-Builtin		purple		none		bold
-Import		white		none
-Include		white		none
-IncSearch	magenta		grayblue	bold
-LineNr		grayblue	darkgray
-MatchParen	yellow		none	bold
-Question	yellow		none		bold
-Search		cyan		search		bold
-SpecialKey	yellow		darkgray
-StatusLine	white		darkgray
-StatusLineNC	gray		darkgray
-TabLine		background	gray
-TabLineFill	none		gray
-TabLineSel	white		none
-Title		white		none		bold
-VertSplit	grayblue	darkgray
-SignColumn	none		darkgray
-Visual		none		grayblue
-Folded		gray2		fold		italic
-FoldColumn	darkblue	darkgray	italic
-Conceal		gray2		darkgray	italic
-NonText		grayblue	none
-Todo		yellow		darkblue	bold
+Type            blue            none
+StorageClass    darkblue        none
+Structure       blue            none
+Typedef         purple          none
+Primitive       blue            none
+Class           purple          none
 
-# TODO
-SpellBad	red		none		undercurl
-SpellCap	green		none		undercurl
-SpellLocal	blue		none		undercurl
-SpellRare	purple		none		undercurl
+Special         darkyellow      none
+SpecialChar     ->              Special
+Tag             ->              Special
+SpecialComment  ->              Special
+Delimiter       gray            none
+Debug           yellow          none
 
-# Diff
-DiffDelete		darkred		none
+Pmenu           white           grayblue
+PmenuSbar       none            grayblue
+PmenuSel        background      green
+PmenuThumb      none            green
+
+ColorColumn     none            darkgray
+CursorLine      none            darkgray
+CursorLineNr    cyan            darkgray
+CursorColumn    none            darkgray
+Cursor          none            darkblue
+EndOfBuffer     grayblue        none
+Error           background      red
+ErrorMsg        red             none            bold
+Ignore          grayblue        none
+Builtin         purple          none            bold
+Import          white           none
+Include         white           none
+IncSearch       magenta         grayblue        bold
+LineNr          grayblue        darkgray
+MatchParen      yellow          none            bold
+Question        yellow          none            bold
+Search          cyan            search          bold
+SpecialKey      yellow          darkgray
+StatusLine      white           darkgray
+StatusLineNC    gray            darkgray
+TabLine         background      gray
+TabLineFill     none            gray
+TabLineSel      white           none
+Title           white           none            bold
+VertSplit       grayblue        darkgray
+SignColumn      none            darkgray
+Visual          none            grayblue
+Folded          gray2           fold            italic
+FoldColumn      darkblue        darkgray        italic
+Conceal         gray2           darkgray        italic
+NonText         grayblue        none
+Todo            yellow          darkblue        bold
+
+; TODO
+SpellBad        red             none            undercurl
+SpellCap        green           none            undercurl
+SpellLocal      blue            none            undercurl
+SpellRare       purple          none            undercurl
+
+; Diff
+DiffDelete              darkred         none
 
 verbatim
 hi DiffAdd    guifg=NONE guibg=#1E3C25 ctermfg=NONE ctermbg=23
@@ -152,51 +168,51 @@ hi DiffChange guifg=NONE guibg=#1E1F51 ctermfg=NONE ctermbg=17
 hi DiffText   guifg=NONE guibg=#421F25 ctermfg=NONE ctermbg=52
 endverbatim
 
-diffAdded			green		none
-diffChanged			darkyellow	none
-diffRemoved			red		none
-diffDiffer			darkyellow	none bold
-diffFile			purple		none bold
-diffLine			yellow		none italic
+diffAdded                       green           none
+diffChanged                     darkyellow      none
+diffRemoved                     red             none
+diffDiffer                      darkyellow      none bold
+diffFile                        purple          none bold
+diffLine                        yellow          none italic
 
-# gutter
-GitGutterAdd			green		darkgray
-GitGutterChange			darkyellow	darkgray
-GitGutterChangeDelete		darkyellow	darkgray
-GitGutterDelete			red		darkgray
-SignifySignAdd			green		darkgray
-SignifySignChange		darkyellow	darkgray
-SignifySignChangeDelete		darkyellow	darkgray
-SignifySignDelete		red		darkgray
+; gutter
+GitGutterAdd                    green           darkgray
+GitGutterChange                 darkyellow      darkgray
+GitGutterChangeDelete           darkyellow      darkgray
+GitGutterDelete                 red             darkgray
+SignifySignAdd                  green           darkgray
+SignifySignChange               darkyellow      darkgray
+SignifySignChangeDelete         darkyellow      darkgray
+SignifySignDelete               red             darkgray
 
 #if get(g:Vsd, 'extra_highlight', 1)
-	# help
-	helpCommand		->	Type
-	helpSectionDelim	->	PreProc
-	helpHeader		->	PreProc
-	helpHeadline		->	Statement
-	helpHyperTextEntry	->	String
-	helpHyperTextJump	->	Identifier
-	helpExample		->	Comment
-	helpOption		->	Type
-	helpSpecial		->	Special
+        ; help
+        helpCommand             ->      Type
+        helpSectionDelim        ->      PreProc
+        helpHeader              ->      PreProc
+        helpHeadline            ->      Statement
+        helpHyperTextEntry      ->      String
+        helpHyperTextJump       ->      Identifier
+        helpExample             ->      Comment
+        helpOption              ->      Type
+        helpSpecial             ->      Special
 
-	# HTML
-	htmlTag				gray		none
-	htmlTagName			purple		none
-	htmlArg				white		none
+        ; HTML
+        htmlTag                         gray            none
+        htmlTagName                     purple          none
+        htmlArg                         white           none
 
-	# Python
-	pythonBytesEscape		darkcyan	none
-	pythonStrFormat			darkcyan	none
-	pythonStrFormatting		darkcyan	none
+        ; Python
+        pythonBytesEscape               darkcyan        none
+        pythonStrFormat                 darkcyan        none
+        pythonStrFormatting             darkcyan        none
 
-	# C
-	cSpecial			darkcyan	none
-	cBraces			->	Delimiter
+        ; C
+        cSpecial                        darkcyan        none
+        cBraces                 ->      Delimiter
 #endif
 
 Variant: 256
-Folded		gray2		darkgray	italic
+Folded          gray2           darkgray        italic
 
-# vim: ft=colortemplate
+; vim: ft=colortemplate
