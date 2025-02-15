@@ -71,22 +71,8 @@ Number          red             none
 Boolean         red             none
 Float           red             none
 
-ConstexprVariable ->            Constant
-EnumMember ->                   Constant
-NonTypeTemplateParameter ->     Constant
-
 Identifier      cyan            none
-LocalVariable   lightgray       none
-Variable        lightgray       none            italic
-Argument        gray            none
-Field           aqua            none
-StaticField     aqua            none            italic
-
 Function        blue            none            italic
-Method          blue            none
-StaticMethod    blue            none            italic
-
-Namespace       blue            none
 
 Statement       white           none
 Conditional     white           none
@@ -103,10 +89,8 @@ PreCondit       ->              PreProc
 
 Type            blue            none
 StorageClass    darkblue        none
-Structure       blue            none
+Structure       darkblue        none
 Typedef         purple          none
-Primitive       blue            none
-Class           purple          none
 
 Special         darkyellow      none
 SpecialChar     ->              Special
